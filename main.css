@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+}
+
+li.home {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    font-size: smaller;
+}
+
+.buttonhome {
+    border: 1px solid black;
+    border-radius: 70px;
+    text-align: center;
+    padding: 10px;
+    flex: .5;
+    margin: 5px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 70px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    background-color: white;
+}
+  
+/* .img-container {
+    height: 40%;
+} */
+
+.projects-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.h2home {
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    padding: 5px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: left;
+    padding: 5px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.hero-bold {
+    color: #FF7300;
+}
+
+.nz-img {
+  width: 90%;
+}
+
+.nav-buttons-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 35px;
+    margin-top: 40px;
+}
+
+.nav-buttons {
+    margin-right: 35px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 92%;
+}
+
+/* .icon {
+    margin-left: 40px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.icon-size {
+    width: 30px;
+    margin-left: 30px;
+
+} */
+
+.icon {
+    padding: 30px;
+}
+
+.icon-size {
+    height: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+
+.project {
+    width: 85%;
+    /* padding: 5px; */
+}
+
+input, textarea {
+    border: 1px solid black;
+}
+
+
+/* for desktop */
+@media (min-width: 481px) {
+
+    .ultimate-container {
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ultimate-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-container {
+        margin: 100px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        flex-basis: 50%;
+    }
+    
+    .break {
+        flex-basis: 100%;
+        height: 25px;
+    }
+
+    .project-box {
+        flex-basis: 45%;
+        /* padding: 5px; */
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+}
