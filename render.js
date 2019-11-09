@@ -9,8 +9,8 @@ const homeRender = function () {
     `<div class="ultimate-container">
   
           <section class="img-container">
-              <img src="imgs/doodle.png" alt="nz image placeholder" 
-              class="nz-img">
+              <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
+              class="doodle">
           </section>
   
           <section class="content-container">
@@ -49,6 +49,9 @@ const homeRender = function () {
           </section>
         </div>`
   );
+  handle.handleGoToAbout();
+  handle.handleGoToProject();
+  handle.handleGoToContact();
 };
 
     
@@ -59,15 +62,15 @@ const aboutRender = function() {
     `<div class="ultimate-container">
   
           <section class="img-container">
-              <img src="imgs/doodle.png" alt="nz image placeholder" 
-              class="nz-img">
+              <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
+              class="doodle">
           </section>
   
           <section class="content-container">
               
               <nav class="nav-container">
                   <ul class="nav-buttons">
-                    <li class="aboutbut">
+                    <li class="projectsbut">
                         <button type="submit" class="button">PROJECTS</a>
                     </li>
                     <li class="homebut">
@@ -80,7 +83,7 @@ const aboutRender = function() {
               </nav>
               <section class="copy-container">
                   <h2 class="abouth2">About Me</h2>
-                  <p>
+                  <p class="aboutp">
                       Web development is a relatively new pursuit for me, 
                       but I have been a master troubleshooter throughout my 
                       entire life. When I was small, as a leader of our 
@@ -91,7 +94,7 @@ const aboutRender = function() {
                       complex vehicles with the old car parts and junk
                       scattered around in the surrounding woods.
                   </p>
-                  <p>    
+                  <p class="aboutp">    
                       Thankfully, the tools available to software engineers 
                       are much more robust! Figuring out fresh ways to 
                       utilize the tools at hand towards building something 
@@ -101,7 +104,7 @@ const aboutRender = function() {
                       - is unending. I look forward to traversing that landscape 
                       for many years to come.
                   </p>
-                  <p>
+                  <p class="aboutp">
                       Coding is just one of many threads of passion in my 
                       life- I'm also a trumpet-playing, crazy-dancing member 
                       of a street band, and co-founded the School of HONK, a 
@@ -114,6 +117,12 @@ const aboutRender = function() {
           </section>
         </div>`
   );
+  console.log('onto contact');
+  handle.handleGoToContact();
+  console.log('onto home');
+  handle.handleGoToHome();
+  console.log('onto projects');
+  handle.handleGoToProject();
 };
     
 const projectsRender = function() {
@@ -122,16 +131,16 @@ const projectsRender = function() {
   $('main').html(
     `<div class="ultimate-container">
   
-          <section class="img-container">
-              <img src="imgs/doodle.png" alt="nz image placeholder" 
-              class="nz-img">
-          </section>
+        <section class="img-container">
+            <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
+            class="doodle">
+        </section>
   
-          <section class="content-container">
+        <section class="content-container">
               
-              <nav class="nav-container">
-                  <ul class="nav-buttons">
-                    <li class="projectsbut">
+            <nav class="nav-container">
+                <ul class="nav-buttons">
+                    <li class="aboutbut">
                         <button type="submit" class="button">ABOUT</a>
                     </li>
                     <li class="homebut">
@@ -140,32 +149,38 @@ const projectsRender = function() {
                     <li class="contactbut">
                         <button type="button" class="button">CONTACT</a>
                     </li>
-                  </ul>
-              </nav>
-              <section>
-                  <h2>My Work</h2>
-                      
-                  <h3>Here's what I've been up to...</h3>
-              </section>
-              <section class="projects-container">
-              
-                  <div class="project-box">
-                      <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
-                  </div>
-                  <div class="project-box">
-                      <img src="imgs/quiz.png" class="project two"alt="screenshot of my bookmark app"/>
-                  </div>
-                  <div class="break"></div>
-                  <div class="project-box">
-                      <img src="imgs/quiz.png" class="project three" alt="screenshot of my bookmark app"/>
-                  </div>
-                  <div class="project-box">
-                      <img src="imgs/bookmark.png" class="project four"alt="screenshot of my bookmark app"/>
-                  </div>
-              </section>
-          </section>
-        </div>`
+                </ul>
+            </nav>
+            <section class="projects-container">
+                <h2>My Work</h2>
+                <h3>Here's what I've been up to...</h3>
+                <div class="project-box">
+                    <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
+                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks.</p>
+                    <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index">live app</a></p>
+                </div>
+                <div class="project-box">
+                    <img src="imgs/quiz.png" class="project two"alt="screenshot of my bookmark app"/>
+                    <p class="project-title">This <span id="title-bold">Trivia Quiz App</span> dares users to test their Indianapolis Colts knowledge!</p>
+                    <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Anthony-Maggie-Quiz">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Anthony-Maggie-Quiz/">live app</a></p>
+                </div>
+                <div class="break"></div>
+                <div class="project-box">
+                <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
+                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks.</p>
+                    <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index">live app</a></p>
+                </div>
+                
+            </section>
+        </section>
+    </div>`
   );
+  handle.handleGoToAbout();
+  handle.handleGoToHome();
+  handle.handleGoToContact();
 };
     
 const contactRender = function() {
@@ -175,8 +190,8 @@ const contactRender = function() {
     `<div class="ultimate-container">
               
         <section class="img-container">
-            <img src="imgs/doodle.png" alt="nz image placeholder" 
-            class="nz-img">
+            <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
+            class="doodle">
         </section>
 
         <section class="content-container">
@@ -193,22 +208,26 @@ const contactRender = function() {
                     </li>
                 </ul>
             </nav>
-            <h2>Let\'s collaborate!</h2>
-            <form id="contact-me">
-                <label for="name">Name</label>
-                <input type="text" name="contact" id="name">
-                <label for="email">Email</label>
-                <input type="text" name="contact" id="email">
-                <label for="message">Message</label>
-                <textarea name="contact" id="message" rows="5"></textarea>
-            </form>
+            <section class="contact-content">
+                <h2 class="contact-header">Let's collaborate!</h2>
+                
+                <p class="contactp">Send me an <a href="mailto:maggiekmcclellan@gmail.com" target="_top">email</a></p>
+                <p class="contactp">See my work on <a href="https://github.com/therealmbittarelli">
+                GitHub</a></p>
+                <p class="contactp">Find me on <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694">LinkedIn</a></p>
+                <p class="contactp">Feel free to check out my <a href="https://www.instagram.com/wiffleballhero/">
+                Instagram feed</a>
+                to get a glimpse of my recent adventures</p>
+            </section>
         </section>
     </div>`
   );
+  handle.handleGoToAbout();
+  handle.handleGoToHome();
+  handle.handleGoToProject();
 };
     
 
-  
   
 export default {
   homeRender,

@@ -11,6 +11,7 @@ const handleGoToHome = function() {
 };
 
 const handleGoToAbout = function() {
+  console.log('about handler')
   $('.aboutbut').on('click', e => {
     e.preventDefault();
     $('main').empty();
@@ -38,6 +39,7 @@ const handleGoToContact = function() {
     render.contactRender();
   });
 };
+
 
 
 
