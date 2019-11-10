@@ -103,7 +103,6 @@ p {
 .content-container {
     display: flex;
     flex-direction: column;
-    /* flex: 2; */
 }
 
 .nav-buttons-home {
@@ -126,18 +125,6 @@ p {
     margin-right: 37px;
 }
 
-/* .icon {
-    margin-left: 40px;
-    margin-top: 35px;
-    text-align: center;
-}
-
-.icon-size {
-    width: 30px;
-    margin-left: 30px;
-
-} */
-
 .icon {
     padding: 30px;
 }
@@ -154,7 +141,7 @@ form {
 }
 
 .project-box {
-    text-align: center;;
+    text-align: center;
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
@@ -167,7 +154,6 @@ form {
 
 .project {
     width: 85%;
-    /* padding: 5px; */
 }
 
 .project-links, .project-tech {
@@ -197,107 +183,59 @@ form {
 
 }
 
-
-/* for desktop */
 @media (min-width: 768px) {
 
-
     main {
+        vertical-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: whitesmoke;
-        height: 1000px;
     }
+
     .ultimate-container {
+        width: 820px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         background-color: white;
-        border: 10px solid whitesmoke;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .content-container {
+        max-width: 410px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .img-container {
-        flex: 1;
+    .homeimg {
+        margin-top: 50px;
+        margin-left: 40px;
     }
 
-    .doodle {
-        width: 120%;
-        margin-left: 50px;
-        margin-bottom: 85px;
-        margin-top: 30px;
-      }
-
-
-    .projects-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex: auto;
-        flex: 1;
-        width: 50%;
+    .aboutimg {
+        margin-top: 120px;
+        margin-left: 20px;
     }
-
-    .copy-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex: auto;
-        flex: 1;
-        width: 50%;
-    }
-
-    /* .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        flex: 1;
-    } */
-    
-    .break {
-        flex-basis: 100%;
-        height: 25px;
-    }
-
-    .project-box {
-        display: inline;
-    }
-
-    .one, .three {
-        margin-left: 50px;
-    }
-
 
     .abouth2 {
-        margin-left: 175px;
-        font-size: 36px;
-
+        margin-left: 17px;
     }
 
-    h3 {
-        font-size: 30px;
+    .projectsimg {
+        margin-left: 25px;
+        margin-top: 120px;
     }
 
-    p {
-        font-size: 16px;
-        width: 400px;
-        line-height: 1.4;
-        text-align: justify;
-        margin-left: 175px;
+    .contact-header {
+        margin-left: 13px;
     }
 
-    
-    label {
-        /* margin-left: 50px; */
+    .contactimg{
+        margin-top: 40px;
+        margin-left: 20px;
     }
-    .contacth2 {
-        text-align: left;
-        color: purple
-    }
+
 }
 
 @media (min-width: 981px) {
@@ -311,7 +249,9 @@ form {
         margin-right: auto;
     }
 
-    
+    .contact-header {
+        margin-left: 35px;
+    }
 
     .img-container {
         width: 420px;
@@ -319,5 +259,17 @@ form {
     }
     .doodle {
         width: 200%;
+    }
+
+    .homeimg {
+        margin-left: 65px;
+    }
+
+    .aboutimg {
+        margin-left: 50px;
+    }
+
+    .projectsimg {
+        margin-left: 50px;
     }
 }

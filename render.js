@@ -10,10 +10,10 @@ const homeRender = function () {
   
           <section class="img-container">
               <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
-              class="doodle">
+              class="doodle homeimg">
           </section>
   
-          <section class="content-container">
+          <section class="content-container home-content">
               <h1 class="hero-bold">I'm Maggie</h1>
               <h2 class="h2home">A Developer in Development</h2>
               <nav class="nav-container">
@@ -31,18 +31,18 @@ const homeRender = function () {
               </nav>
               <ul class="footer-icons">
                   <li>
-                      <a href="https://github.com/therealmbittarelli" class="fa-github icon">
-                          <img src="imgs/GitHub-Mark-120px-plus.png" class="icon-size"/>
+                      <a href="https://github.com/therealmbittarelli" aria-label="Go to Maggie's GitHub page" class="fa-github icon">
+                          <img src="imgs/GitHub-Mark-120px-plus.png" alt="GitHub logo" class="icon-size"/>
                       </a>
                   </li>
                   <li>
-                      <a href="#" class="fa-email icon">
-                          <img src="imgs/emaila.png" class="icon-size"/>
+                      <a href="mailto:maggiekmcclellan@gmail.com" aria-label="Email Maggie" class="fa-email icon">
+                          <img src="imgs/emaila.png" alt="Email icon shaped like an envelope" class="icon-size"/>
                       </a>
                   </li>
                   <li>
-                      <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" class="fa-linkedin icon">
-                          <img src="imgs/linkedin.png" class="icon-size"/>
+                      <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" aria-label="Go to Maggie's LinkedIn page" class="fa-linkedin icon">
+                          <img src="imgs/linkedin.png" alt="LinkedIn icon" class="icon-size"/>
                       </a>
                   </li>
               </ul>
@@ -63,7 +63,7 @@ const aboutRender = function() {
   
           <section class="img-container">
               <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
-              class="doodle">
+              class="doodle aboutimg">
           </section>
   
           <section class="content-container">
@@ -84,7 +84,8 @@ const aboutRender = function() {
               <section class="copy-container">
                   <h2 class="abouth2">About Me</h2>
                   <p class="aboutp">
-                      Web development is a relatively new pursuit for me, 
+                      Having graduated from Thinkful's Engineering Immersion course in March of 2020,
+                      professional web development is a relatively new pursuit for me, 
                       but I have been a master troubleshooter throughout my 
                       entire life. When I was small, as a leader of our 
                       neighborhood kid brigade, I would be charged with drawing 
@@ -102,7 +103,8 @@ const aboutRender = function() {
                       old to me; it’s safe to say that the software development 
                       landscape of what can be learned - and what can be created 
                       - is unending. I look forward to traversing that landscape 
-                      for many years to come.
+                      for many years to come, and to continuting to encounter
+                      new creative and curious minds to work alongside of!
                   </p>
                   <p class="aboutp">
                       Coding is just one of many threads of passion in my 
@@ -133,7 +135,7 @@ const projectsRender = function() {
   
         <section class="img-container">
             <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
-            class="doodle">
+            class="doodle projectsimg">
         </section>
   
         <section class="content-container">
@@ -156,22 +158,23 @@ const projectsRender = function() {
                 <h3>Here's what I've been up to...</h3>
                 <div class="project-box">
                     <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
-                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks.</p>
+                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks, created for a class assignment.</p>
                     <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index">live app</a></p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" aria-label="View Bookmark App live page">live app</a></p>
                 </div>
+                <hr>
                 <div class="project-box">
                     <img src="imgs/quiz.png" class="project two"alt="screenshot of my bookmark app"/>
-                    <p class="project-title">This <span id="title-bold">Trivia Quiz App</span> dares users to test their Indianapolis Colts knowledge!</p>
+                    <p class="project-title">This <span id="title-bold">Trivia Quiz App</span> dares users to test their Indianapolis Colts knowledge! Built for a class assignment.</p>
                     <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Anthony-Maggie-Quiz">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Anthony-Maggie-Quiz/">live app</a></p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Anthony-Maggie-Quiz" aria-label="View Quiz App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Anthony-Maggie-Quiz/" aria-label="View Quiz App live page">live app</a></p>
                 </div>
-                <div class="break"></div>
+                <hr>
                 <div class="project-box">
                 <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
-                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks.</p>
+                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks, created for a class assignment.</p>
                     <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index">live app</a></p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" aria-label="View Bookmark App live page">live app</a></p>
                 </div>
                 
             </section>
@@ -191,7 +194,7 @@ const contactRender = function() {
               
         <section class="img-container">
             <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
-            class="doodle">
+            class="doodle contactimg">
         </section>
 
         <section class="content-container">
@@ -211,11 +214,11 @@ const contactRender = function() {
             <section class="contact-content">
                 <h2 class="contact-header">Let's collaborate!</h2>
                 
-                <p class="contactp">Send me an <a href="mailto:maggiekmcclellan@gmail.com" target="_top">email</a></p>
-                <p class="contactp">See my work on <a href="https://github.com/therealmbittarelli">
+                <p class="contactp">Send me an <a href="mailto:maggiekmcclellan@gmail.com" target="_top" aria-label="Maggie's email address">email</a></p>
+                <p class="contactp">See my work on <a href="https://github.com/therealmbittarelli" aria-label="Maggie's GitHub page">
                 GitHub</a></p>
-                <p class="contactp">Find me on <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694">LinkedIn</a></p>
-                <p class="contactp">Feel free to check out my <a href="https://www.instagram.com/wiffleballhero/">
+                <p class="contactp">Find me on <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" aria-label="Maggie's LinkedIn page">LinkedIn</a></p>
+                <p class="contactp">Feel free to check out my <a href="https://www.instagram.com/wiffleballhero/" aria-label="Maggie's Instagram feed">
                 Instagram feed</a>
                 to get a glimpse of my recent adventures</p>
             </section>
