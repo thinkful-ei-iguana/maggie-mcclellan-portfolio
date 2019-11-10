@@ -10,6 +10,14 @@ body {
     line-height: 1.5;
 }
 
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: orangered;
+}
+
 li.home {
     list-style-type: none;
     display: flex;
@@ -158,14 +166,6 @@ form {
 
 .project-links, .project-tech {
     text-align: center;
-}
-
-.contact-content a:link {
-    color: orange;
-}
-
-.contact-content a:visited {
-    color: orangered;
 }
 
 .contactp {

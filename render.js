@@ -4,50 +4,49 @@ import handle from './handle.js'
 
 const homeRender = function () {
 
-  console.log('hoooo')
   $('main').html(
     `<div class="ultimate-container">
   
-          <section class="img-container">
-              <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
-              class="doodle homeimg">
-          </section>
+        <section class="img-container">
+            <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
+            class="doodle homeimg">
+        </section>
   
-          <section class="content-container home-content">
-              <h1 class="hero-bold">I'm Maggie</h1>
-              <h2 class="h2home">A Developer in Development</h2>
-              <nav class="nav-container">
-                  <ul class="nav-buttons-home">
-                      <li class="home aboutbut">
-                          <button type="submit" class="buttonhome">About</a>
-                      </li>
-                      <li class="home projectsbut">
-                          <button type="submit" class="buttonhome">Projects</a>
-                      </li>
-                      <li class="home contactbut">
-                          <button type="button" class="buttonhome">Contact</a>
-                      </li>
-                  </ul>
-              </nav>
-              <ul class="footer-icons">
-                  <li>
-                      <a href="https://github.com/therealmbittarelli" aria-label="Go to Maggie's GitHub page" class="fa-github icon">
-                          <img src="imgs/GitHub-Mark-120px-plus.png" alt="GitHub logo" class="icon-size"/>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="mailto:maggiekmcclellan@gmail.com" aria-label="Email Maggie" class="fa-email icon">
-                          <img src="imgs/emaila.png" alt="Email icon shaped like an envelope" class="icon-size"/>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" aria-label="Go to Maggie's LinkedIn page" class="fa-linkedin icon">
-                          <img src="imgs/linkedin.png" alt="LinkedIn icon" class="icon-size"/>
-                      </a>
-                  </li>
-              </ul>
-          </section>
-        </div>`
+        <section class="content-container home-content">
+            <h1 class="hero-bold">I'm Maggie</h1>
+            <h2 class="h2home">A Developer in Development</h2>
+            <nav class="nav-container">
+                <ul class="nav-buttons-home">
+                    <li class="home aboutbut">
+                        <button type="submit" class="buttonhome">About</a>
+                    </li>
+                    <li class="home projectsbut">
+                        <button type="submit" class="buttonhome">Projects</a>
+                    </li>
+                    <li class="home contactbut">
+                        <button type="button" class="buttonhome">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer-icons">
+                <li>
+                    <a href="https://github.com/therealmbittarelli" aria-label="Go to Maggie's GitHub page" class="fa-github icon">
+                        <img src="imgs/GitHub-Mark-120px-plus.png" alt="GitHub logo" class="icon-size"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:maggiekmcclellan@gmail.com" aria-label="Email Maggie" class="fa-email icon">
+                        <img src="imgs/emaila.png" alt="Email icon shaped like an envelope" class="icon-size"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" aria-label="Go to Maggie's LinkedIn page" class="fa-linkedin icon">
+                        <img src="imgs/linkedin.png" alt="LinkedIn icon" class="icon-size"/>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>`
   );
   handle.handleGoToAbout();
   handle.handleGoToProject();
@@ -57,19 +56,18 @@ const homeRender = function () {
     
 const aboutRender = function() {
     
-  console.log('aboutRender running');
   $('main').html(
     `<div class="ultimate-container">
   
-          <section class="img-container">
-              <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
-              class="doodle aboutimg">
-          </section>
+        <section class="img-container">
+            <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
+            class="doodle aboutimg">
+        </section>
   
-          <section class="content-container">
+        <section class="content-container">
               
-              <nav class="nav-container">
-                  <ul class="nav-buttons">
+            <nav class="nav-container">
+                <ul class="nav-buttons">
                     <li class="projectsbut">
                         <button type="submit" class="button">PROJECTS</a>
                     </li>
@@ -79,57 +77,58 @@ const aboutRender = function() {
                     <li class="contactbut">
                         <button type="button" class="button">CONTACT</a>
                     </li>
-                  </ul>
-              </nav>
-              <section class="copy-container">
-                  <h2 class="abouth2">About Me</h2>
-                  <p class="aboutp">
-                      Having graduated from Thinkful's Engineering Immersion course in March of 2020,
-                      professional web development is a relatively new pursuit for me, 
-                      but I have been a master troubleshooter throughout my 
-                      entire life. When I was small, as a leader of our 
-                      neighborhood kid brigade, I would be charged with drawing 
-                      up drafts of plans to build time machines and rocket ships 
-                      (who didn't when they were young?), in particular taking 
-                      lead on figuring out how we might cobble together such 
-                      complex vehicles with the old car parts and junk
-                      scattered around in the surrounding woods.
-                  </p>
-                  <p class="aboutp">    
-                      Thankfully, the tools available to software engineers 
-                      are much more robust! Figuring out fresh ways to 
-                      utilize the tools at hand towards building something 
-                      incredible is one that will never run the risk of getting 
-                      old to me; it’s safe to say that the software development 
-                      landscape of what can be learned - and what can be created 
-                      - is unending. I look forward to traversing that landscape 
-                      for many years to come, and to continuting to encounter
-                      new creative and curious minds to work alongside of!
-                  </p>
-                  <p class="aboutp">
-                      Coding is just one of many threads of passion in my 
-                      life- I'm also a trumpet-playing, crazy-dancing member 
-                      of a street band, and co-founded the School of HONK, a 
-                      nonprofit alternative music school. Or if I'm not in 
-                      a spectacle-raising mood, I'm just as happy curling up 
-                      with my cat Matto and reading a book I've borrowed 
-                      from the local library.
-                  </p>
-              </section>
-          </section>
-        </div>`
+                </ul>
+            </nav>
+            <section class="copy-container">
+                <h2 class="abouth2">About Me</h2>
+                <p class="aboutp">
+                    Having graduated from Thinkful's Engineering Immersion course in March of 2020,
+                    professional web development is a relatively new pursuit for me, 
+                    but I have been a master troubleshooter throughout my 
+                    entire life. When I was small, as a leader of our 
+                    neighborhood kid brigade, I would be charged with drawing 
+                    up drafts of plans to build time machines and rocket ships 
+                    (who didn't when they were young?), in particular taking 
+                    lead on figuring out how we might cobble together such 
+                    complex vehicles with the old car parts and junk
+                    scattered around in the surrounding woods.
+                </p>
+                <p class="aboutp">    
+                    Thankfully, the tools available to software engineers 
+                    are much more robust! Figuring out fresh ways to 
+                    utilize the tools at hand towards building something 
+                    incredible is one that will never run the risk of getting 
+                    old to me; it’s safe to say that the software development 
+                    landscape of what can be learned - and what can be created 
+                    - is unending. I look forward to traversing that landscape 
+                    for many years to come, and to continuting to encounter
+                    new creative and curious minds to work alongside of!
+                </p>
+                <p class="aboutp">
+                    Coding is just one of many threads of passion in my 
+                    life- I'm also a trumpet-playing, crazy-dancing member 
+                    of a <a href="http://www.facebook.com/flybybrassband" 
+                    aria-label="Fly By Brass Band's Facebook page">street band</a>,
+                    and co-founded the 
+                    <a href="http://www.schoolofhonk.org" aria-label="School 
+                    of HONK's homepage">School of HONK</a>, 
+                    a nonprofit alternative music school. Or if I'm not in 
+                    a spectacle-raising mood, I'm just as happy curling up 
+                    with my cat Matto and reading a book I've borrowed 
+                    from the local library.
+                </p>
+            </section>
+        </section>
+    </div>`
   );
-  console.log('onto contact');
+
   handle.handleGoToContact();
-  console.log('onto home');
   handle.handleGoToHome();
-  console.log('onto projects');
   handle.handleGoToProject();
 };
     
 const projectsRender = function() {
   
-  console.log('aboutRender is running');
   $('main').html(
     `<div class="ultimate-container">
   
@@ -188,7 +187,6 @@ const projectsRender = function() {
     
 const contactRender = function() {
     
-  console.log('contactrender running');
   $('main').html(
     `<div class="ultimate-container">
               
