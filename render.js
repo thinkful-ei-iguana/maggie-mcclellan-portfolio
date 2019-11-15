@@ -30,7 +30,7 @@ const homeRender = function () {
             </nav>
             <ul class="footer-icons">
                 <li>
-                    <a href="https://github.com/therealmbittarelli" aria-label="Go to Maggie's GitHub page" class="fa-github icon">
+                    <a href="https://github.com/therealmbittarelli" target="_blank" aria-label="Go to Maggie's GitHub page" class="fa-github icon">
                         <img src="imgs/GitHub-Mark-120px-plus.png" alt="GitHub logo" class="icon-size"/>
                     </a>
                 </li>
@@ -40,7 +40,7 @@ const homeRender = function () {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" aria-label="Go to Maggie's LinkedIn page" class="fa-linkedin icon">
+                    <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" target="_blank" aria-label="Go to Maggie's LinkedIn page" class="fa-linkedin icon">
                         <img src="imgs/linkedin.png" alt="LinkedIn icon" class="icon-size"/>
                     </a>
                 </li>
@@ -108,10 +108,10 @@ const aboutRender = function() {
                     Coding is just one of many threads of passion in my 
                     life- I'm also a trumpet-playing, crazy-dancing member 
                     of a <a href="http://www.facebook.com/flybybrassband" 
-                    aria-label="Fly By Brass Band's Facebook page">street band</a>,
-                    and co-founded the 
-                    <a href="http://www.schoolofhonk.org" aria-label="School 
-                    of HONK's homepage">School of HONK</a>, 
+                    target="_blank" aria-label="Fly By Brass Band's Facebook 
+                    page">street band</a>,and co-founded the 
+                    <a href="http://www.schoolofhonk.org" target="_blank" 
+                    aria-label="School of HONK's homepage">School of HONK</a>, 
                     a nonprofit alternative music school. Or if I'm not in 
                     a spectacle-raising mood, I'm just as happy curling up 
                     with my cat Matto and reading a book I've borrowed 
@@ -159,21 +159,21 @@ const projectsRender = function() {
                     <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
                     <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks, created for a class assignment.</p>
                     <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" aria-label="View Bookmark App live page">live app</a></p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" target="_blank" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" target="_blank" aria-label="View Bookmark App live page">live app</a></p>
                 </div>
                 <hr>
                 <div class="project-box">
                     <img src="imgs/quiz.png" class="project two"alt="screenshot of my bookmark app"/>
                     <p class="project-title">This <span id="title-bold">Trivia Quiz App</span> dares users to test their Indianapolis Colts knowledge! Built for a class assignment.</p>
                     <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Anthony-Maggie-Quiz" aria-label="View Quiz App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Anthony-Maggie-Quiz/" aria-label="View Quiz App live page">live app</a></p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Anthony-Maggie-Quiz" target="_blank" aria-label="View Quiz App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Anthony-Maggie-Quiz/" target="_blank" aria-label="View Quiz App live page">live app</a></p>
                 </div>
                 <hr>
                 <div class="project-box">
                 <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
                     <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks, created for a class assignment.</p>
                     <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" aria-label="View Bookmark App live page">live app</a></p>
+                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" target="_blank" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" target="_blank" aria-label="View Bookmark App live page">live app</a></p>
                 </div>
                 
             </section>
@@ -213,10 +213,10 @@ const contactRender = function() {
                 <h2 class="contact-header">Let's collaborate!</h2>
                 
                 <p class="contactp">Send me an <a href="mailto:maggiekmcclellan@gmail.com" target="_top" aria-label="Maggie's email address">email</a></p>
-                <p class="contactp">See my work on <a href="https://github.com/therealmbittarelli" aria-label="Maggie's GitHub page">
+                <p class="contactp">See my work on <a href="https://github.com/therealmbittarelli" target="_blank" aria-label="Maggie's GitHub page">
                 GitHub</a></p>
-                <p class="contactp">Find me on <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" aria-label="Maggie's LinkedIn page">LinkedIn</a></p>
-                <p class="contactp">Feel free to check out my <a href="https://www.instagram.com/wiffleballhero/" aria-label="Maggie's Instagram feed">
+                <p class="contactp">Find me on <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" target="_blank" aria-label="Maggie's LinkedIn page">LinkedIn</a></p>
+                <p class="contactp">Feel free to check out my <a href="https://www.instagram.com/wiffleballhero/" target="_blank" aria-label="Maggie's Instagram feed">
                 Instagram feed</a>
                 to get a glimpse of my recent adventures</p>
             </section>
