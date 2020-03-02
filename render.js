@@ -1,11 +1,11 @@
-import handle from './handle.js'
+import handle from './handle.js';
 
 
 
 const homeRender = function () {
 
-  $('main').html(
-    `<div class="ultimate-container">
+    $('main').html(
+        `<div class="ultimate-container">
   
         <section class="img-container">
             <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
@@ -40,24 +40,24 @@ const homeRender = function () {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" target="_blank" aria-label="Go to Maggie's LinkedIn page" class="fa-linkedin icon">
+                    <a href="https://www.linkedin.com/in/maggie-mcclellan/" target="_blank" aria-label="Go to Maggie's LinkedIn page" class="fa-linkedin icon">
                         <img src="imgs/linkedin.png" alt="LinkedIn icon" class="icon-size"/>
                     </a>
                 </li>
             </ul>
         </section>
     </div>`
-  );
-  handle.handleGoToAbout();
-  handle.handleGoToProject();
-  handle.handleGoToContact();
+    );
+    handle.handleGoToAbout();
+    handle.handleGoToProject();
+    handle.handleGoToContact();
 };
 
-    
-const aboutRender = function() {
-    
-  $('main').html(
-    `<div class="ultimate-container">
+
+const aboutRender = function () {
+
+    $('main').html(
+        `<div class="ultimate-container">
   
         <section class="img-container">
             <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
@@ -109,10 +109,10 @@ const aboutRender = function() {
                     life- I'm also a trumpet-playing, crazy-dancing member 
                     of a <a href="http://www.facebook.com/flybybrassband" 
                     target="_blank" aria-label="Fly By Brass Band's Facebook 
-                    page">street band</a>,and co-founded the 
+                    page">street band</a>, and co-founded the 
                     <a href="http://www.schoolofhonk.org" target="_blank" 
                     aria-label="School of HONK's homepage">School of HONK</a>, 
-                    a nonprofit alternative music school. Or if I'm not in 
+                    a nonprofit alternative music school. If I'm not in 
                     a spectacle-raising mood, I'm just as happy curling up 
                     with my cat Matto and reading a book I've borrowed 
                     from the local library.
@@ -120,17 +120,17 @@ const aboutRender = function() {
             </section>
         </section>
     </div>`
-  );
+    );
 
-  handle.handleGoToContact();
-  handle.handleGoToHome();
-  handle.handleGoToProject();
+    handle.handleGoToContact();
+    handle.handleGoToHome();
+    handle.handleGoToProject();
 };
-    
-const projectsRender = function() {
-  
-  $('main').html(
-    `<div class="ultimate-container">
+
+const projectsRender = function () {
+
+    $('main').html(
+        `<div class="ultimate-container">
   
         <section class="img-container">
             <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
@@ -156,39 +156,39 @@ const projectsRender = function() {
                 <h2>My Work</h2>
                 <h3>Here's what I've been up to...</h3>
                 <div class="project-box">
-                    <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
-                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks, created for a class assignment.</p>
-                    <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" target="_blank" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" target="_blank" aria-label="View Bookmark App live page">live app</a></p>
+                    <img src="imgs/createSetlist.png" class="project one" alt="screenshot of Street Beat dashboard"/>
+                    <p class="project-title"><span id="title-bold">Street Beat</span> connects users to their bandmembers and band-related shared resources.</p>
+                    <p class="project-tech">Technologies used: JavaScript, React, CSS, HTML, Express, Node, PostgreSQL, Mocha, Chai, Jest, Supertest</p>
+                    <p class="project-links">GitHub <a href="https://github.com/therealmbittarelli/Street-Beat-Client" target="_blank" aria-label="View Street Beat client GitHub repository">Client</a> and <a href="https://github.com/therealmbittarelli/Street-Beat-Server" target="_blank" aria-label="View Street Beat API GitHub repository">API</a> Repositories and <a href="https://street-beat.now.sh/" target="_blank" aria-label="View Street Beat live page">live app</a></p>
                 </div>
                 <hr>
                 <div class="project-box">
-                    <img src="imgs/quiz.png" class="project two"alt="screenshot of my bookmark app"/>
-                    <p class="project-title">This <span id="title-bold">Trivia Quiz App</span> dares users to test their Indianapolis Colts knowledge! Built for a class assignment.</p>
-                    <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Anthony-Maggie-Quiz" target="_blank" aria-label="View Quiz App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Anthony-Maggie-Quiz/" target="_blank" aria-label="View Quiz App live page">live app</a></p>
+                    <img src="imgs/MiM_dash.png" class="project two"alt="screenshot of Maori in Motion dashboard"/>
+                    <p class="project-title">This <span id="title-bold">Maori in Motion</span> utilizes the spaced repetition technique to help users learn basic Maori words.</p>
+                    <p class="project-tech">Technologies used: JavaScript, React, CSS, HTML, Express, Node, PostgreSQL, Mocha, Chai, Cypress</p>
+                    <p class="project-links">GitHub <a href="https://github.com/therealmbittarelli/Maori-in-Motion-client" target="_blank" aria-label="View Maori in Motion client GitHub repository">Client</a> and <a href="https://github.com/therealmbittarelli/Maori-in-Motion-server" target="_blank" aria-label="View Maori in Motion API GitHub repository">API</a> Repositories and <a href="https://maori-in-motion.now.sh" target="_blank" aria-label="View Maori in Motion live page">live app</a></p>
                 </div>
                 <hr>
                 <div class="project-box">
-                <img src="imgs/bookmark.png" class="project one" alt="screenshot of my bookmark app"/>
-                    <p class="project-title"><span id="title-bold">Bookmark Buddy</span> is an app that allows users to manage and rate their bookmarks, created for a class assignment.</p>
-                    <p class="project-tech">Technologies used: Javascript, CSS, HTML, jQuery</p>
-                    <p class="project-links"><a href="https://github.com/thinkful-ei-iguana/Maggie-bookmarks-app" target="_blank" aria-label="View Bookmark App GitHub repository">GitHub Repository</a> and <a href="https://thinkful-ei-iguana.github.io/Maggie-bookmarks-app/src/index" target="_blank" aria-label="View Bookmark App live page">live app</a></p>
+                <img src="imgs/KH_Pantry.png" class="project one" alt="screenshot of Kitchen Helper pantry organizer"/>
+                    <p class="project-title"><span id="title-bold">Kitchen Helper</span> helps users keep track of ingredient inventory, organize favorite recipes, and create meal plans.</p>
+                    <p class="project-tech">Technologies used: JavaScript, React, CSS, HTML, Express, Node, PostgreSQL, Mocha, Chai, Jest, Supertest</p>
+                    <p class="project-links">GitHub <a href="https://github.com/thinkful-ei-iguana/Delta-Squad-Front-End" target="_blank" aria-label="View Kitchen Helper client GitHub repository">Client</a> and <a href="https://github.com/thinkful-ei-iguana/Delta-Squad-Server" target="_blank" aria-label="View Kitchen Helper API GitHub repository">API</a> Repositories and <a href="https://delta-squad-app.now.sh/" target="_blank" aria-label="View Kitchen Helper live page">live app</a></p>
                 </div>
                 
             </section>
         </section>
     </div>`
-  );
-  handle.handleGoToAbout();
-  handle.handleGoToHome();
-  handle.handleGoToContact();
+    );
+    handle.handleGoToAbout();
+    handle.handleGoToHome();
+    handle.handleGoToContact();
 };
-    
-const contactRender = function() {
-    
-  $('main').html(
-    `<div class="ultimate-container">
+
+const contactRender = function () {
+
+    $('main').html(
+        `<div class="ultimate-container">
               
         <section class="img-container">
             <img src="imgs/doodle-small.png" alt="doodle of Maggie and her cat on a couch" 
@@ -215,24 +215,24 @@ const contactRender = function() {
                 <p class="contactp">Send me an <a href="mailto:maggiekmcclellan@gmail.com" target="_top" aria-label="Maggie's email address">email</a></p>
                 <p class="contactp">See my work on <a href="https://github.com/therealmbittarelli" target="_blank" aria-label="Maggie's GitHub page">
                 GitHub</a></p>
-                <p class="contactp">Find me on <a href="https://www.linkedin.com/in/maggie-mcclellan-1a686694" target="_blank" aria-label="Maggie's LinkedIn page">LinkedIn</a></p>
+                <p class="contactp">Find me on <a href="https://www.linkedin.com/in/maggie-mcclellan/" target="_blank" aria-label="Maggie's LinkedIn page">LinkedIn</a></p>
                 <p class="contactp">Feel free to check out my <a href="https://www.instagram.com/wiffleballhero/" target="_blank" aria-label="Maggie's Instagram feed">
                 Instagram feed</a>
                 to get a glimpse of my recent adventures</p>
             </section>
         </section>
     </div>`
-  );
-  handle.handleGoToAbout();
-  handle.handleGoToHome();
-  handle.handleGoToProject();
+    );
+    handle.handleGoToAbout();
+    handle.handleGoToHome();
+    handle.handleGoToProject();
 };
-    
 
-  
+
+
 export default {
-  homeRender,
-  aboutRender,
-  projectsRender,
-  contactRender
+    homeRender,
+    aboutRender,
+    projectsRender,
+    contactRender
 };
